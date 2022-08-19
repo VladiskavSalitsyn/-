@@ -50,20 +50,20 @@ public class Main { // не обращаем внимание что тут кл
         Цепочка ламбд вместо растущего терма
          */
 
-        // TODO: Java.utilt. Дополнительно. Контейнер для возможных нулевых значений
+        // TODO: Java.utilt. Дополнительно. Контейнер для возможных нулевых значений.
 // Создать опциональный
-        Optional<String> optional = Optional.ofNullable (a);
+        Optional<String> optional=Optional.ofNullable(a);
 // обработать опцию
-        optional.map (s -> “RebelLabs:” + s);
+        optional.map(s-> “RebelLabs:” +s);
 // отобразить функцию, которая возвращает необязательный параметр
-        optional.ifPresent (System.out : : println);
+        optional.ifPresent(System.out: :println);
 // получить ответ или выбросить исключение
         optional.get();
 
 // возвращает значение или заданное значение
         optional.orElse(“Hello word!”);
 // возвращает пустой необязательный параметр, если он не удовлетворен
-        optional.filter (s -> s.starsWith (“RebelLabs”));
+        optional.filter(s->s.starsWith(“RebelLabs”));
 
 /*
 Поля - используйте обычные объекты.
